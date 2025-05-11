@@ -1,0 +1,40 @@
+CREATE 281class 3 int int bool age salary hired
+INSERT INTO 281class 5 ROWS
+19 20000 false
+25 27000 true
+15 1500 false
+35 30000 true
+30 28000 true
+GENERATE FOR 281class bst INDEX ON age
+DELETE FROM 281class WHERE age < 20
+DELETE FROM 281class WHERE age > 35
+DELETE FROM 281class WHERE age = 35
+INSERT INTO 281class 3 ROWS
+5 0 false
+10 50 false
+80 50000 true
+GENERATE FOR 281class bst INDEX ON hired
+PRINT FROM 281class 2 salary age WHERE hired = true
+GENERATE FOR 281class bst INDEX ON salary
+PRINT FROM 281class 2 salary age WHERE salary > 49999
+DELETE FROM 281class WHERE salary < 60000
+PRINT FROM 281class 3 age salary hired ALL
+CREATE students 5 int int int int string age address members friends name
+GENERATE FOR students hash INDEX ON address
+GENERATE FOR 281class hash INDEX ON age
+JOIN 281class AND students WHERE age = address AND PRINT 2 age 1 address 2
+INSERT INTO students 3 ROWS
+19 11 8 1 Billy
+25 20 81 80 Bob
+9 5 4 31 Joe
+INSERT INTO 281class 5 ROWS
+19 20000 false
+25 27000 true
+15 1500 false
+35 30000 true
+30 28000 true
+GENERATE FOR students hash INDEX ON blah
+JOIN 281class AND students WHERE age = age AND PRINT 2 age 1 address 2
+GENERATE FOR students hash INDEX ON age
+JOIN 281class AND students WHERE age = age AND PRINT 2 age 1 address 2
+QUIT

@@ -1,0 +1,35 @@
+CREATE 281class 3 string string bool emotion person Y/N
+INSERT INTO students 5 ROWS
+happy Darden true
+stressed students false
+busy office_hours true
+stressed students true
+stressed Paoletti true
+INSERT INTO 281class 5 ROWS
+happy Darden true
+stressed students false
+busy office_hours true
+stressed students true
+stressed Paoletti true
+PRINT FROM 280class 3 emotion person Y/N ALL
+PRINT FROM 281class 3 emotion person yes/no ALL
+PRINT FROM 281class 1 people WHERE people = Darden
+PRINT FROM 281class 3 emotion people Y/N WHERE emotion < gleeful
+DELETE FROM 281class WHERE emoticon < happy
+DELETE FROM 281class WHERE people < Danny
+DELETE FROM 281class WHERE emotion < happy
+CREATE students 3 string string bool emotion person Y/N
+INSERT INTO students 8 ROWS
+happy Darden true
+stressed students false
+busy office_hours true
+stressed students true
+stressed Paoletti true
+happy Darden true
+happy Sith true
+victorious Sith true
+JOIN 281class and studs WHERE emotion = emotion AND PRINT 2 emotion 1 emotion 2
+JOIN 281class and students WHERE emotion = emoticon AND PRINT 2 emotion 1 emotion 2
+JOIN 281class and students WHERE emotion = emotion AND PRINT 2 emoticon 1 emotion 2
+JOIN 281class and students WHERE emotion = emotion AND PRINT 2 emotion 1 emoticon 2
+QUIT

@@ -1,0 +1,18 @@
+CREATE 281class 3 string string bool emotion person Y/N
+GENERATE FOR 281class bst INDEX ON emotion
+INSERT INTO 281class 5 ROWS
+happy Connor true
+sad Connor false
+happy Teacher false
+stressed student false
+happy boss false
+PRINT FROM 281class 2 person emotion WHERE emotion > crazy
+PRINT FROM 281class 2 person emotion WHERE emotion < agitated
+INSERT INTO 281class 2 ROWS
+sad Mother false
+happy Father true
+DELETE FROM 281class WHERE person = Father
+DELETE FROM 281class WHERE emotion > jumpy
+DELETE FROM 281class WHERE emotion < irate
+PRINT FROM 281class 1 Y/N WHERE emotion = happy
+QUIT
