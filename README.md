@@ -11,12 +11,24 @@ Use the `CREATE` command to define a new table with columns and their data types
 
 **Syntax:**  
 ```
-CREATE table_name number_of_columns column1_type column2_type, ... column1_name, column2_name, ...
+CREATE <table_name> <number_of_columns> <column1_type> <column2_type> ... <columnN_type> <column1_name> <column2_name> ... <columnN_name>
 ```
 
 ### Example:
 
-**Syntax:**
 ```
 CREATE table1 3 string string bool emotion person Y/N
+```
+
+### **2. Remove Existing table from database
+
+**Syntax:**
+```
+Remove <table_name>
+```
+
+### Example:
+
+```
+Remove table1
 ```
