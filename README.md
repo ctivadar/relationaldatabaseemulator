@@ -73,3 +73,25 @@ PRINT FROM <tablename> <N> <print_colname1> <print_colname2> ... <print_colnameN
 ```
 PRINT FROM table1 2 person emotion WHERE Y/N = true
 ```
+
+### **5. Deleting Rows from a Table**
+Use the `DELETE FROM` command to remove rows that match a specified condition
+
+**Syntax:**
+```
+DELETE FROM <tablename> WHERE <colname> <OP> <value>
+```
+
+**Example:**
+
+```
+DELETE FROM table1 WHERE name = John
+```
+
+### **6. Joining Two Tables**
+Use the `JOIN` command to combine rows from two tables based on a matching column
+
+**Syntax:**
+```
+JOIN <tablename1> AND <tablename2> WHERE <colname1> = <colname2> AND PRINT <N> <print_colname1> <1|2> <print_colname2> <1|2> ... <print_colnameN> <1|2>
+```
