@@ -18,4 +18,5 @@ CREATE table_name number_of_columns column1_type column2_type, ... column1_name,
 
 **Syntax:**
 ```sql
-CREATE table_name 3 
+CREATE table1 3 string string bool emotion person Y/N
+```
