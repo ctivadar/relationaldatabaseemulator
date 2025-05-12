@@ -11,7 +11,7 @@ Use the `CREATE` command to define a new table with columns and their data types
 
 **Syntax:**  
 ```
-CREATE <table_name> <number_of_columns> <column1_type> <column2_type> ... <columnN_type> <column1_name> <column2_name> ... <columnN_name>
+CREATE <tablename> <N> <coltype1> <coltype2> ... <coltypeN> <colname1> <colname2> ... <colnameN>
 ```
 
 **Example:**
@@ -21,14 +21,41 @@ CREATE table1 3 string string bool emotion person Y/N
 ```
 
 ### **2. Remove Existing table from database**
+Use the `REMOVE` command to delete an existing table.
 
 **Syntax:**
 ```
-Remove <table_name>
+REMOVE <tablename>
 ```
 
 **Example:**
 
 ```
-Remove table1
+REMOVE table1
+```
+
+### **3. Inserting Data into a Table**
+Use the `INSERT INTO` command to add new rows of data into a table.
+
+**Syntax:**
+```
+INSERT INTO <tablename> <N> ROWS 
+<value11> <value12> ... <value1M> 
+<value21> <value22> ... <value2M> 
+... 
+<valueN1> <valueN2> ... <valueNM>
+```
+
+**Example:**
+
+```
+INSERT INTO table1 8 ROWS
+happy Matt true
+stressed Students false
+busy Office_Hours true
+stressed Students true
+stressed Ben true
+happy Matt true
+happy Jedi true
+victorious Jedi true
 ```
