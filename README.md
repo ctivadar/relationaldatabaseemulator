@@ -20,7 +20,7 @@ CREATE <table_name> <number_of_columns> <column1_type> <column2_type> ... <colum
 CREATE table1 3 string string bool emotion person Y/N
 ```
 
-### **2. Remove Existing table from database
+### **2. Remove Existing table from database**
 
 **Syntax:**
 ```
