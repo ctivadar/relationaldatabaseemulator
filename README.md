@@ -10,13 +10,13 @@ SillyQL is a lightweight database management system that allows users to create,
 Use the `CREATE` command to define a new table with columns and their data types.  
 
 **Syntax:**  
-```sql
+```
 CREATE table_name number_of_columns column1_type column2_type, ... column1_name, column2_name, ...
 ```
 
 ### Example:
 
 **Syntax:**
-```sql
+```
 CREATE table1 3 string string bool emotion person Y/N
 ```
