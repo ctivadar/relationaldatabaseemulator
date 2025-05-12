@@ -59,3 +59,17 @@ happy Matt true
 happy Jedi true
 victorious Jedi true
 ```
+
+### **4. Printing Table Contents**
+Use the `PRINT FROM` command to display all rows in a table.
+
+**Syntax:**
+```
+PRINT FROM <tablename> <N> <print_colname1> <print_colname2> ... <print_colnameN> {WHERE <colname> <OP> <value> | ALL}
+```
+
+**Example:**
+
+```
+PRINT FROM table1 2 person emotion WHERE Y/N = true
+```
